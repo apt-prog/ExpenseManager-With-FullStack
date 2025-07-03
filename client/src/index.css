@@ -1,0 +1,36 @@
+/* Sliding modal animation */
+.animate-slide-in-right {
+  animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Custom scrollbar for dashboard layout */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2563eb; /* blue-600 */
+  border-radius: 8px;
+  border: 2px solid #0f172a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6; /* blue-500 */
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #2563eb #0f172a;
+}
+
